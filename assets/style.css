@@ -1,0 +1,89 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(76, 76, 76);
+}
+
+:root {
+    --title: rgb(171, 66, 171);
+}
+
+h1, h2, p, footer{
+    color: var(--title);
+}
+
+header p {
+    color: white;
+    margin-top: 1rem;
+    padding: 15px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    position: relative;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+h2 {
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: -2rem;
+}
+
+section {
+    border: 2px dashed white;
+    margin: 5px;
+    width: 30%;
+    padding: 15px;
+    position: relative;
+    margin-top: 4rem;
+    max-width: 300px;
+}
+
+h2:hover, section:hover {
+    border-color: magenta;
+    transition: 0.5s;
+}
+
+.card-text {
+    padding: 20px;
+    border-radius: 5px;
+    background: linear-gradient(rgb(164, 104, 164),rgba(175, 60, 87, 0.499))
+}
+
+code {
+    background-color: inherit;
+}
+
+footer {
+    text-align: center;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 992px){
+    section {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    section {
+        width: 90%;
+        flex-direction: column;
+    }
+}
+
+/* 992 3
+
+768 2 */
+
